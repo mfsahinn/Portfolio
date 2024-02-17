@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VItYMVnvBsiWIgXG0xXnfSllaHS+XJZHDW4RuPhLjQYdT9uusC3K9G8WgPI6afrJ7/8JQ6z5MGNtfLtFjbITRQ==",
+  "dgSpecHash": "C6Mlzqik+/u4+HOiOSktZGhLzIETHaTdQsDC11wzIs9sznIqt+QEcotYDjDknhGmq5yyEL7bTT8hUBaSVSFoaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.Common\\Portfolio.Common.csproj",
+  "projectFilePath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MFatih\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "/Users/mustafafatihsahin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
