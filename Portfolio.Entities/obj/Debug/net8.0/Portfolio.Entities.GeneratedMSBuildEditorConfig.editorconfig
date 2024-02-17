@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Portfolio.Entities
-build_property.ProjectDir = C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Entities\
+build_property.ProjectDir = /Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Entities/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

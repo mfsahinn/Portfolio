@@ -2385,42 +2385,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MFatih\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/mustafafatihsahin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.Web\\Portfolio.Web.csproj",
+      "projectUniqueName": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Portfolio.Web.csproj",
       "projectName": "Portfolio.Web",
-      "projectPath": "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.Web\\Portfolio.Web.csproj",
-      "packagesPath": "C:\\Users\\MFatih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.Web\\obj\\",
+      "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Portfolio.Web.csproj",
+      "packagesPath": "/Users/mustafafatihsahin/.nuget/packages/",
+      "outputPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\MFatih\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mustafafatihsahin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.Common\\Portfolio.Common.csproj": {
-              "projectPath": "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.Common\\Portfolio.Common.csproj"
+            "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj": {
+              "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj"
             },
-            "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.DataAccess\\Portfolio.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.DataAccess\\Portfolio.DataAccess.csproj"
+            "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DataAccess/Portfolio.DataAccess.csproj": {
+              "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DataAccess/Portfolio.DataAccess.csproj"
             }
           }
         }
@@ -2475,7 +2468,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
