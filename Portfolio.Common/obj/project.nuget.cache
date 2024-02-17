@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VItYMVnvBsiWIgXG0xXnfSllaHS+XJZHDW4RuPhLjQYdT9uusC3K9G8WgPI6afrJ7/8JQ6z5MGNtfLtFjbITRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MFatih\\Documents\\GitHub\\Portfolio\\Portfolio.Common\\Portfolio.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MFatih\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

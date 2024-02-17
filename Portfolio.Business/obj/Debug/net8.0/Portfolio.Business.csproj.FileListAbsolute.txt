@@ -1,0 +1,12 @@
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\bin\Debug\net8.0\Portfolio.Business.deps.json
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\bin\Debug\net8.0\Portfolio.Business.dll
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\bin\Debug\net8.0\Portfolio.Business.pdb
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\Portfolio.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\Portfolio.Business.AssemblyInfoInputs.cache
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\Portfolio.Business.AssemblyInfo.cs
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\Portfolio.Business.csproj.CoreCompileInputs.cache
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\Portfolio.Business.sourcelink.json
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\Portfolio.Business.dll
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\refint\Portfolio.Business.dll
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\Portfolio.Business.pdb
+C:\Users\MFatih\Documents\GitHub\Portfolio\Portfolio.Business\obj\Debug\net8.0\ref\Portfolio.Business.dll
