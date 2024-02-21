@@ -13,27 +13,26 @@ namespace Portfolio.DataAccess.Context
     public class AppDbContext : DbContext
     {
 
-        // Constructor'lar birleştirildi ve IConfiguration parametresi eklendi.
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
-           
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
             modelBuilder.Entity<Author>().ToTable("Authors");
-
-            // Author sınıfının Id özelliğinin birincil anahtar olarak belirlenmesi
             modelBuilder.Entity<Author>().HasKey(a => a.Id);
-
         }
 
-      
-
         public DbSet<Author> Authors { get; set; }
-
-
+        public DbSet<AboutMe> AboutMe { get; set; }
+        public DbSet<Educations> Educations { get; set; }
+        public DbSet<HobbiesAndInterests> HobbiesAndInterests { get; set; }
+        public DbSet<JobExperiences> JobExperiences { get; set; }
+        public DbSet<Projects> Projects { get; set; }
+        public DbSet<ProjectsDefinitions> ProjectsDefinitions { get; set; }
+        public DbSet<SeminarsAndCourses> SeminarsAndCourses { get; set; }
+        public DbSet<TechnicalSkills> TechnicalSkills { get; set; }
     }
 }
