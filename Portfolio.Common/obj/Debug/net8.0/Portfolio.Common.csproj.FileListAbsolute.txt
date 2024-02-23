@@ -24,3 +24,6 @@ C:/Users/MFatih/Documents/GitHub/Portfolio/Portfolio.Common/obj/Debug/net8.0/ref
 /Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/obj/Debug/net8.0/refint/Portfolio.Common.dll
 /Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/obj/Debug/net8.0/Portfolio.Common.pdb
 /Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/obj/Debug/net8.0/ref/Portfolio.Common.dll
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/bin/Debug/net8.0/Portfolio.Interface.dll
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/bin/Debug/net8.0/Portfolio.Interface.pdb
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/obj/Debug/net8.0/Portfolio.Common.csproj.CopyComplete

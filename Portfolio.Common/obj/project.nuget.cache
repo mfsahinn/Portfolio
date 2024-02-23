@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "C6Mlzqik+/u4+HOiOSktZGhLzIETHaTdQsDC11wzIs9sznIqt+QEcotYDjDknhGmq5yyEL7bTT8hUBaSVSFoaw==",
+  "dgSpecHash": "w5qXfJWF0c46dcRthbr8oDVzLj1/1jbGZiBiN7Zm5SUO+bEf7E8+2PhshsV/Z13Ip16BFI8a1pMIp3JYCBF9Yg==",
   "success": true,
   "projectFilePath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj",
   "expectedPackageFiles": [
-    "/Users/mustafafatihsahin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "/Users/mustafafatihsahin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/mustafafatihsahin/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

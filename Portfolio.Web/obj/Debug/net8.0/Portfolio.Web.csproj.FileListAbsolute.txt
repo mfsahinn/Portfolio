@@ -220,3 +220,6 @@ C:/Users/MFatih/Documents/GitHub/Portfolio/Portfolio.Web/bin/Debug/net8.0/Portfo
 /Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/obj/Debug/net8.0/ref/Portfolio.Web.dll
 C:/Users/MFatih/Documents/GitHub/Portfolio/Portfolio.Web/bin/Debug/net8.0/Portfolio.Common.dll
 C:/Users/MFatih/Documents/GitHub/Portfolio/Portfolio.Web/bin/Debug/net8.0/Portfolio.Common.pdb
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/bin/Debug/net8.0/Portfolio.Interface.dll
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/bin/Debug/net8.0/Portfolio.Interface.pdb
