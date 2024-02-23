@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Portfolio.DataAccess.Context;
-using Portfolio.Common.Dependency;
-
+using Portfolio.Core.Dependencies;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

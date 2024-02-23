@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/Portfolio.Interface.csproj": {
-                "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/Portfolio.Interface.csproj"
+              "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj": {
+                "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/Portfolio.Interface.csproj": {
+    "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/Portfolio.Interface.csproj",
-        "projectName": "Portfolio.Interface",
-        "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/Portfolio.Interface.csproj",
+        "projectUniqueName": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj",
+        "projectName": "Portfolio.DTO",
+        "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj",
         "packagesPath": "/Users/mustafafatihsahin/.nuget/packages/",
-        "outputPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/obj/",
+        "outputPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mustafafatihsahin/.nuget/NuGet/NuGet.Config"

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GFRB9uinL4oRqPX1IeDVIZ8gc8BPFlpYusfi8BzklYDF8d4lhRf4ik23KI1bB0DSiF+lrLIFMLgoibhZXJ643g==",
+  "dgSpecHash": "Ah4XrxkaZKoH3lPA8vFtzUqrGK0XiU/7x+k8RSKAskj5WBYCPaWmAB/HuEnlWySPxk1rLaAqBqbO3eLqs9czCw==",
   "success": true,
   "projectFilePath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DataAccess/Portfolio.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -28,8 +28,8 @@
     "/Users/mustafafatihsahin/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
     "/Users/mustafafatihsahin/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/Users/mustafafatihsahin/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
-    "/Users/mustafafatihsahin/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
-    "/Users/mustafafatihsahin/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.0/npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
+    "/Users/mustafafatihsahin/.nuget/packages/npgsql/8.0.2/npgsql.8.0.2.nupkg.sha512",
+    "/Users/mustafafatihsahin/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.2/npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
     "/Users/mustafafatihsahin/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/mustafafatihsahin/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/mustafafatihsahin/.nuget/packages/system.composition/6.0.0/system.composition.6.0.0.nupkg.sha512",

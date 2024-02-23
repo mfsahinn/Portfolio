@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Portfolio.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66a75f8a3c9f939881a4f445086303702542d9c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87015c15cca83edd65e40e7422541a1ee7cb50eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Portfolio.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Portfolio.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

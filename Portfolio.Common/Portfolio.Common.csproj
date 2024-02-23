@@ -9,6 +9,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Portfolio.Interface\Portfolio.Interface.csproj" />
+    <ProjectReference Include="..\Portfolio.DTO\Portfolio.DTO.csproj" />
   </ItemGroup>
 </Project>

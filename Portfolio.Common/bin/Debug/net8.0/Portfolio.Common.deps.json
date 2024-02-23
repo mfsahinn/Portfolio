@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
           "Newtonsoft.Json": "13.0.3",
-          "Portfolio.Interface": "1.0.0"
+          "Portfolio.DTO": "1.0.0"
         },
         "runtime": {
           "Portfolio.Common.dll": {}
@@ -32,9 +32,9 @@
           }
         }
       },
-      "Portfolio.Interface/1.0.0": {
+      "Portfolio.DTO/1.0.0": {
         "runtime": {
-          "Portfolio.Interface.dll": {}
+          "Portfolio.DTO.dll": {}
         }
       }
     }
@@ -59,7 +59,7 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "Portfolio.Interface/1.0.0": {
+    "Portfolio.DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
