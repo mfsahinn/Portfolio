@@ -6409,6 +6409,14 @@
       "PackagePath": "staticwebassets/img/works/3.jpg"
     },
     {
+      "Id": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/wwwroot/js/DataTable/DataTablePrepare.js",
+      "PackagePath": "staticwebassets/js/DataTable/DataTablePrepare.js"
+    },
+    {
+      "Id": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/wwwroot/js/DataTable/DataTable_tr-TR.json",
+      "PackagePath": "staticwebassets/js/DataTable/DataTable_tr-TR.json"
+    },
+    {
       "Id": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/wwwroot/js/functions.bundle.js",
       "PackagePath": "staticwebassets/js/functions.bundle.js"
     },

@@ -9,12 +9,7 @@
   src: url("tabler/tabler-icons.eot");
   src: url("tabler/tabler-icons.eot?#iefix") format("embedded-opentype"), url("tabler/tabler-icons.woff2") format("woff2"), url("tabler/tabler-icons.woff") format("woff"), url("tabler/tabler-icons.ttf") format("truetype");
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "tabler-icons";
-    src: url("tabler/tabler-icons.svg#tabler-icons") format("svg");
-  }
-}
+
 .ti {
   vertical-align: middle;
   font-size: 1.25rem;

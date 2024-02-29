@@ -55,6 +55,14 @@ public class AboutMeService : IAboutMe
         return new DataResult<List<AboutMeGetAllResponse>>(true, "List Fetch Successful.", allResult);
     }
 
+    public PagingResult<AboutMeGetAllResponse> GetAll(DataTableRequest request)
+    {
+        return _context.AboutMe.Select(x=> new AboutMeGetAllResponse{
+             Id=x.Id,
+            About=x.About
+        }).Prepare2DataTablePagingResult((DataTableRequest)request,"test");
+    }
+
     public Result Insert(AboutMeInsertRequest request)
     {
         _context.AboutMe.Add(new Entities.AboutMe

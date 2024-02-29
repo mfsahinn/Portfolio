@@ -1,0 +1,28 @@
+@{
+    Layout="_AdminLayout";
+}
+
+<div class="card">
+  <h5 class="card-header">Ajax Sourced Server-side</h5>
+  <div class="card-datatable text-nowrap">
+      <table class="datatables-ajax table dataTable no-footer" id="myTable" aria-describedby="DataTables_Table_0_info" style="width: 1384px;">
+          <thead>
+           <th>Id</th>
+           <th>Hakkında</th>
+          </thead>
+        </table>
+  </div>
+</div>
+
+@section Scripts{
+
+    <script>
+        var columnOptions = [
+            {data:'Id'},
+            {data:'About'}
+        ];
+
+        ListTable=DataTablePrepare("myTable","/AboutMe/GetAll",columnOptions);
+
+    </script>
+}

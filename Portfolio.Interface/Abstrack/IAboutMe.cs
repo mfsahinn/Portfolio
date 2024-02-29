@@ -11,5 +11,5 @@ public interface IAboutMe
     Result Delete(AboutMeDeleteRequest request);
     DataResult<List<AboutMeGetAllResponse>> GetAll();
     Result SetPassive(AboutMeSetPassiveRequest request);
-
+    PagingResult<AboutMeGetAllResponse> GetAll(DataTableRequest request);
 }

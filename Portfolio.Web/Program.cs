@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 using Portfolio.DataAccess.Context;
 using Portfolio.Core.Dependencies;
+using Portfolio.Common.DataResult;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation().SetPortfolioJsonOptions();
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>
