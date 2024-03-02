@@ -2071,6 +2071,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Portfolio.Business": "1.0.0",
           "Portfolio.Interface": "1.0.0"
         },
@@ -2087,6 +2088,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Portfolio.Common": "1.0.0",
           "Portfolio.Entities": "1.0.0"
         },
         "compile": {
@@ -4897,8 +4899,11 @@
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.2",
+      "Portfolio.Common >= 1.0.0",
       "Portfolio.Core >= 1.0.0",
-      "Portfolio.DataAccess >= 1.0.0"
+      "Portfolio.DTO >= 1.0.0",
+      "Portfolio.DataAccess >= 1.0.0",
+      "Portfolio.Interface >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4926,11 +4931,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj": {
+              "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj"
+            },
             "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Core/Portfolio.Core.csproj": {
               "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Core/Portfolio.Core.csproj"
             },
             "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DataAccess/Portfolio.DataAccess.csproj": {
               "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DataAccess/Portfolio.DataAccess.csproj"
+            },
+            "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj": {
+              "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj"
+            },
+            "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/Portfolio.Interface.csproj": {
+              "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Interface/Portfolio.Interface.csproj"
             }
           }
         }

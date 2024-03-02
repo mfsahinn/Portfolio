@@ -3,6 +3,8 @@ using Portfolio.Common.DataResult;
 using Portfolio.DTO.Response.AboutMe;
 using Portfolio.Interface.Abstrack;
 
+
+
 namespace Portfolio.Web.Controllers;
 
 public class AboutMeController: Controller
@@ -15,6 +17,11 @@ public class AboutMeController: Controller
     }
 
     public IActionResult Index()
+    {
+        return View();
+    }
+
+      public IActionResult Index2()
     {
         return View();
     }

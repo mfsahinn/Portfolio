@@ -1,5 +1,6 @@
+@using Portfolio.Core.Dependencies
+  
   <!-- Menu -->
-
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" style="background-color:#242745 !important">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
@@ -17,14 +18,14 @@
 
           <ul class="menu-inner py-1">
             <!-- Page -->
-            <li class="menu-item active">
+            <li class="menu-item @Html.ActiveClass("AboutMe", "Index")">
               <a href="/AboutMe/Index" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-user"></i>
                 <div data-i18n="Page 1">Hakkında</div>
               </a>
             </li>
-            <li class="menu-item">
-              <a href="page-2.html" class="menu-link">
+            <li class="menu-item @Html.ActiveClass("AboutMe", "Index2")">
+              <a href="/AboutMe/Index2" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-app-window"></i>
                 <div data-i18n="Page 2">Page 2</div>
               </a>

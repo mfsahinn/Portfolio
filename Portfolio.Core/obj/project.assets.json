@@ -2823,6 +2823,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Portfolio.Common": "1.0.0",
           "Portfolio.Entities": "1.0.0"
         },
         "compile": {
@@ -7961,6 +7962,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.Extensions.DependencyInjection >= 8.0.0",
       "Portfolio.Business >= 1.0.0",
       "Portfolio.Interface >= 1.0.0"
     ]
@@ -8008,6 +8010,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

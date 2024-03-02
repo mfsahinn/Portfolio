@@ -26,68 +26,30 @@ namespace Portfolio.DataAccess.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
+                        .HasColumnType("uuid");
 
                     b.Property<string>("About")
                         .HasColumnType("text");
 
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
-
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.ToTable("AboutMe");
                 });
 
-            modelBuilder.Entity("Portfolio.Entities.Author", b =>
+            modelBuilder.Entity("Portfolio.Entities.Educations", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("FirstName")
-                        .HasColumnType("text");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Authors", (string)null);
-                });
-
-            modelBuilder.Entity("Portfolio.Entities.Educations", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
-
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
-
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("timestamp with time zone");
@@ -102,16 +64,7 @@ namespace Portfolio.DataAccess.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -122,31 +75,16 @@ namespace Portfolio.DataAccess.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
-
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Explanation")
                         .HasColumnType("text");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -157,19 +95,13 @@ namespace Portfolio.DataAccess.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
+                        .HasColumnType("uuid");
 
                     b.Property<string>("CompanyName")
                         .HasColumnType("text");
 
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
-
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Definition")
                         .HasColumnType("text");
@@ -181,16 +113,7 @@ namespace Portfolio.DataAccess.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -201,16 +124,10 @@ namespace Portfolio.DataAccess.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
-
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Explanation")
                         .HasColumnType("text");
@@ -219,16 +136,7 @@ namespace Portfolio.DataAccess.Migrations
                         .HasColumnType("text");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -239,16 +147,10 @@ namespace Portfolio.DataAccess.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
-
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Definition")
                         .HasColumnType("text");
@@ -257,16 +159,7 @@ namespace Portfolio.DataAccess.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -277,31 +170,16 @@ namespace Portfolio.DataAccess.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
-
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Explanation")
                         .HasColumnType("text");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -312,35 +190,43 @@ namespace Portfolio.DataAccess.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(1);
-
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("uuid")
-                        .HasColumnOrder(2);
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(3);
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
                     b.Property<int?>("Status")
-                        .HasColumnType("integer")
-                        .HasColumnOrder(6);
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(5);
-
-                    b.Property<DateTime>("UpdatedBy")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnOrder(4);
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.ToTable("TechnicalSkills");
+                });
+
+            modelBuilder.Entity("Portfolio.Entities.ThemeMode", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("Mode")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("Status")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ThemeModes");
                 });
 #pragma warning restore 612, 618
         }

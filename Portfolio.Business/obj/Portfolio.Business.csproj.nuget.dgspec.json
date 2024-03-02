@@ -172,6 +172,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj": {
+                "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj"
+              },
               "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Entities/Portfolio.Entities.csproj": {
                 "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Entities/Portfolio.Entities.csproj"
               }

@@ -68,10 +68,9 @@ public class AboutMeService : IAboutMe
         _context.AboutMe.Add(new Entities.AboutMe
         {
             Id = Guid.NewGuid(),
-            CreatedBy = Guid.Empty,
-            CreatedDate = DateTime.Now,
             Status = (int)StatusEnum.Active,
-            About = request.About
+            About = request.About,
+            CreatedDate=DateTime.Now
         });
 
         var ResultContent = _context.SaveChanges();

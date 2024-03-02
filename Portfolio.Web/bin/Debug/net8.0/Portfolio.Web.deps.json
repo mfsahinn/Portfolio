@@ -41,8 +41,11 @@
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.EntityFrameworkCore.Design": "8.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.2",
+          "Portfolio.Common": "1.0.0",
           "Portfolio.Core": "1.0.0",
+          "Portfolio.DTO": "1.0.0",
           "Portfolio.DataAccess": "1.0.0",
+          "Portfolio.Interface": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "8.0.0.0",
           "Microsoft.AspNetCore.Authentication.BearerToken": "8.0.0.0",
@@ -1367,6 +1370,7 @@
       },
       "Portfolio.Core/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Portfolio.Business": "1.0.0",
           "Portfolio.Interface": "1.0.0"
         },
@@ -1381,6 +1385,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Portfolio.Common": "1.0.0",
           "Portfolio.Entities": "1.0.0"
         },
         "runtime": {

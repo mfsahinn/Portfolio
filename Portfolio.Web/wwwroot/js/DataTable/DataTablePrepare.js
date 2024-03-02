@@ -16,6 +16,50 @@ function DataTablePrepare(tableId, dataURL, columnOptions, extraObjectfunction, 
 
     var dataTable = $('#' + tableId).dataTable(
         {
+            dom:   "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f>" +
+            "<'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row mt-2'<'col-sm-12 col-md-4 d-flex justify-content-start'i><'col-sm-12 col-md-4 d-flex justify-content-center'p>" +
+            "<'col-sm-12 col-md-4 d-flex justify-content-end'l>>",
+            
+            buttons: [
+              {
+                extend: 'collection',
+                className: 'btn btn-label-primary dropdown-toggle me-2',
+                text: '<i class="ti ti-file-export me-sm-1"></i> <span class="d-none d-sm-inline-block">Export</span>',
+                buttons: [
+                  {
+                    extend: 'print',
+                    text: '<i class="ti ti-printer me-1" ></i>Print',
+                    className: 'dropdown-item',
+                   
+                  },
+                  {
+                    extend: 'csv',
+                    text: '<i class="ti ti-file-text me-1" ></i>Csv',
+                    className: 'dropdown-item',
+                  
+                  },
+                  {
+                    extend: 'excel',
+                    text: '<i class="ti ti-file-spreadsheet me-1"></i>Excel',
+                    className: 'dropdown-item',
+                  },
+                  {
+                    extend: 'pdf',
+                    text: '<i class="ti ti-file-description me-1"></i>Pdf',
+                    className: 'dropdown-item',
+                  },
+                  {
+                    extend: 'copy',
+                    text: '<i class="ti ti-copy me-1" ></i>Copy',
+                    className: 'dropdown-item',
+                   
+                  }
+                ]
+              },
+        
+            ],
             processing: true,
             serverSide: true,
             responsive: true,
