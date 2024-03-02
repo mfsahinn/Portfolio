@@ -4,6 +4,77 @@
     "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DataAccess/Portfolio.DataAccess.csproj": {}
   },
   "projects": {
+    "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj",
+        "projectName": "Portfolio.Common",
+        "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj",
+        "packagesPath": "/Users/mustafafatihsahin/.nuget/packages/",
+        "outputPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mustafafatihsahin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj": {
+                "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DataAccess/Portfolio.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,6 +97,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj": {
+                "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Common/Portfolio.Common.csproj"
+              },
               "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Entities/Portfolio.Entities.csproj": {
                 "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Entities/Portfolio.Entities.csproj"
               }
@@ -60,9 +134,62 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.2, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj",
+        "projectName": "Portfolio.DTO",
+        "projectPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/Portfolio.DTO.csproj",
+        "packagesPath": "/Users/mustafafatihsahin/.nuget/packages/",
+        "outputPath": "/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mustafafatihsahin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",

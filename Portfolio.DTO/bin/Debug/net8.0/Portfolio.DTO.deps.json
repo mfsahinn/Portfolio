@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Portfolio.DTO/1.0.0": {
+        "runtime": {
+          "Portfolio.DTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Portfolio.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

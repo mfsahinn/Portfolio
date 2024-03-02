@@ -1,0 +1,12 @@
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/bin/Debug/net8.0/Portfolio.DTO.deps.json
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/bin/Debug/net8.0/Portfolio.DTO.dll
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/bin/Debug/net8.0/Portfolio.DTO.pdb
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/Portfolio.DTO.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/Portfolio.DTO.AssemblyInfoInputs.cache
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/Portfolio.DTO.AssemblyInfo.cs
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/Portfolio.DTO.csproj.CoreCompileInputs.cache
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/Portfolio.DTO.sourcelink.json
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/Portfolio.DTO.dll
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/refint/Portfolio.DTO.dll
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/Portfolio.DTO.pdb
+/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.DTO/obj/Debug/net8.0/ref/Portfolio.DTO.dll

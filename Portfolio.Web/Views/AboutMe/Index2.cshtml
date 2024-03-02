@@ -1,0 +1,50 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+ 
+
+<div class="card">
+    <div class="card-datatable text-nowrap">
+        <div class="card-header flex-column flex-md-row">
+            <div class="head-label" style="display:flex;justify-content:space-between;align-items:center">
+
+                <span class="badge rounded-pill bg-label-primary">
+                    <h5 class="card-title text-primary mb-0">Hakkında</h5>
+                </span>
+                <button class="btn btn-secondary create-new btn-primary waves-effect waves-light" tabindex="0"
+                    aria-controls="DataTables_Table_0" type="button">
+                    <span>
+                        <i class="ti ti-plus me-sm-1"></i>
+                        <span class="d-none d-sm-inline-block">Ekle</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <table class="datatables-ajax table dataTable no-footer" id="myTable" aria-describedby="DataTables_Table_0_info"
+            style="width: 1384px;">
+            <thead>
+                <th>Id</th>
+                <th>Hakkında</th>
+            </thead>
+        </table>
+    </div>
+</div>
+
+  <textarea class="summernote" name="editordata"></textarea>
+
+
+@section Scripts {
+    <script>
+        toastr.success('Bildirim metni.');
+
+
+        var columnOptions = [
+            { data: 'Id' },
+            { data: 'About' }
+        ];
+
+        ListTable = DataTablePrepare("myTable", "/AboutMe/GetAll", columnOptions);
+
+    </script>
+}
