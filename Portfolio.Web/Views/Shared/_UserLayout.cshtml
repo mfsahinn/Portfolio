@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<partial name="UserPartial/_Head"></partial>
+
+
+<body class="stretched side-header dark">
+
+	@* <button type="button" class="btn btn-dark body-scheme-toggle" data-bodyclass-toggle="dark" data-add-class="btn-warning" data-remove-class="btn-dark" data-add-html="<i class='bi-brightness-high'></i><span class='visually-hidden'>Light Mode</span>" data-remove-html="<i class='bi-moon-stars'></i><span class='visually-hidden'>Dark Mode</span>"><span class="visually-hidden">Dark Toggle</span></button> *@
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+        <partial name="UserPartial/_Aside"></>
+        
+		@RenderBody()
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="bg-contrast-0 border-width-1">
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="bg-color">
+				<div class="container">
+					<p class="mb-0 text-center text-dark text-opacity-75">Copyrights &copy; 2023 All Rights Reserved by Canvas Inc.</p>
+				</div>
+			</div><!-- #copyrights end -->
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+ 	<partial name="UserPartial/Structure/_Scripts"></partial>
+
+
+</body>
+</html>

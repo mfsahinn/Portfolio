@@ -1,0 +1,94 @@
+<!-- Helpers -->
+<script src="/AdminTemplate/assets/vendor/js/helpers.js"></script>
+<!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+<!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+<script src="/AdminTemplate/assets/vendor/js/template-customizer.js"></script>
+<!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+<script src="/AdminTemplate/assets/js/config.js"></script>
+
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+
+<script src="/AdminTemplate/assets/vendor/libs/jquery/jquery.js"></script>
+<script src="/AdminTemplate/assets/vendor/libs/popper/popper.js"></script>
+
+<script src="/AdminTemplate/assets/vendor/js/bootstrap.js"></script>
+<script src="/AdminTemplate/assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="/AdminTemplate/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="/AdminTemplate/assets/vendor/libs/hammer/hammer.js"></script>
+<script src="/AdminTemplate/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
+<script src="/AdminTemplate/assets/vendor/js/menu.js"></script>
+
+
+<!-- endbuild -->
+
+
+<script src="/AdminTemplate/assets/vendor/libs/toastr/toastr.js"></script>
+<script src="/AdminTemplate/assets/js/ui-toasts.js"></script>
+
+<!-- Vendors JS -->
+
+<!-- Main JS -->
+<script src="/AdminTemplate/assets/js/main.js"></script>
+
+<script src="/AdminTemplate/assets/js/tables-datatables-basic.js"></script>
+
+
+<script src="/js/DataTable/DataTablePrepare.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+
+
+
+
+
+
+<script>
+
+    var summerNoteOptions = {
+        placeholder: 'Hello stand alone ui',
+        tabsize: 2,
+        fontSizes: ['8', '9', '10', '11', '12', '14', '18', '24', '36', '48', '64', '82', '150'],
+        height: 120,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['clear', 'fontname', 'fontsize', 'fontsizeunit', 'forecolor', 'backcolor', 'strikethrough', 'superscript', 'subscript']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+    };
+
+
+
+    // Toastr ayarlarını yap
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+
+    // Toastr ile bir bildirim kutusu göster
+</script>
+
+<script>
+    function initializeSummerNote() {
+        $('.summernote').summernote(summerNoteOptions);
+    }
+    initializeSummerNote()
+</script>
