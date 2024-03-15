@@ -11,6 +11,10 @@ public class Result:IResult
     [JsonProperty(Order = 2)]
     public string[]? Messages { get; set; }
 
+
+    [JsonProperty(Order = 3)]
+    public List<KeyValuePair<string, string>>? KeyValuePairs { get; set; }
+
     public Result()
     {
     }
@@ -32,4 +36,16 @@ public class Result:IResult
         Status = status;
         Messages = messages.ToArray();
     }
+
+    // public Result(bool status, List<string> messages)
+    // {
+    //     Status = status;
+    //     Messages = messages.ToArray();
+    // }
+
+     public Result(bool status,List<KeyValuePair<string, string>> keyValuePairs)
+        {
+            Status = status;
+            KeyValuePairs = keyValuePairs;
+        }
 }

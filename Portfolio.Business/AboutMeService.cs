@@ -57,10 +57,15 @@ public class AboutMeService : IAboutMe
 
     public PagingResult<AboutMeGetAllResponse> GetAll(DataTableRequest request)
     {
-        return _context.AboutMe.Select(x=> new AboutMeGetAllResponse{
-             Id=x.Id,
-            About=x.About
-        }).Prepare2DataTablePagingResult((DataTableRequest)request,"test");
+       return _context.AboutMe
+    .Select(x => new AboutMeGetAllResponse
+    {
+        Id = x.Id,
+        About = x.About,
+        CreatedDate = x.CreatedDate,
+        Status = x.Status
+    })
+    .Prepare2DataTablePagingResult((DataTableRequest)request, "test");
     }
 
     public Result Insert(AboutMeInsertRequest request)
@@ -77,11 +82,11 @@ public class AboutMeService : IAboutMe
 
         if (ResultContent < 0)
         {
-            return new Result(true, "Insert was successful.");
+            return new Result(false, "Addition Failed.");
         }
         else
         {
-            return new Result(false, "Addition Failed.");
+            return new Result(true, "Insert was successful.");
         }
     }
 

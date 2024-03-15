@@ -25,14 +25,15 @@
         <table class="datatables-ajax table dataTable no-footer" id="myTable" aria-describedby="DataTables_Table_0_info"
             style="width: 1384px;">
             <thead>
-                <th>Id</th>
-                <th>Hakkında</th>
+                <th>Created Date</th>
+                <th>Status</th>
+                <th>About</th>
+                <th></th>
+                <th>Is Active</th>
             </thead>
         </table>
     </div>
 </div>
-
-
 
 
 <div class="modal fade" id="aboutMe-insert-Modal" tabindex="-1">
@@ -46,7 +47,7 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <textarea class="summernote" name="editordata"></textarea>
+                        <textarea id="aboutMe-content" class="summernote"></textarea>
 
                     </div>
                 </div>
@@ -54,10 +55,12 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                     <span class="bs-stepper-circle-x me-1"><i class="ti ti-circle-x ti-sm"></i></span>
-                    Close</button>
-                <button type="button" class="btn btn-primary">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary" id="aboutMe-content-save-button">
                     <span class="bs-stepper-circle me-1"><i class="ti ti-check ti-sm"></i></span>
-                    Save</button>
+                    Save
+                </button>
             </div>
         </div>
     </div>
@@ -66,25 +69,209 @@
 
 
 
+<template id="RowProcessButtonsTemplate">
+    <div class="btn-group float-right" role="group">
+        <a id="RecordEditButton" class="btn btn-primary btn-sm" href="#">Detail</a>
+    </div>
+</template>
+
+<template id="RowProcessButtonsTemplate2">
+  <label class="switch switch-success">
+              <input type="checkbox" class="switch-input" id="mySwitch" checked>
+              <span class="switch-toggle-slider">
+                <span class="switch-on">
+                  <i class="ti ti-check"></i>
+                </span>
+                <span class="switch-off">
+                  <i class="ti ti-x"></i>
+                </span>
+              </span>
+            </label>
+</template>
+
+<template id="RowProcessButtonsTemplate3">
+  <label class="switch switch-success">
+              <input type="checkbox" class="switch-input" id="mySwitch">
+              <span class="switch-toggle-slider">
+                <span class="switch-on">
+                  <i class="ti ti-check"></i>
+                </span>
+                <span class="switch-off">
+                  <i class="ti ti-x"></i>
+                </span>
+              </span>
+            </label>
+</template>
+
+
 
 @section Scripts {
-    <script>
-        //toastr.success('Bildirim metni.');
+ <script>
+    var ListTable="";
+    var AboutMeInsertButton = $("#aboutMe-insert-button");
+    var AboutMeInsertModal = $("#aboutMe-insert-Modal");
+    var AboutMeSummerNote = $("#aboutMe-content");
+    var AboutMeSummerNoteContent = $("#aboutMe-content").summernote('code');
+    var AboutMeSummerNoteContentSaveButton = $("#aboutMe-content-save-button");
+    var AboutMeDetailButton = $("#aboutMe-detail-button");
 
-        var AboutMeInsertButton = $("#aboutMe-insert-button");
-        var AboutMeInsertModal = $("#aboutMe-insert-Modal");
+    var columnOptions = [
+        { data: 'CreatedDate' },
+        { data: 'Status' },
+        { data: 'About' },
+        {
+            data: null,
+                 render: function (data, type, row) {
+                    var template = $('#RowProcessButtonsTemplate').html();
+                    template = template.replace(new RegExp('{{Id}}', 'g'), row.Id);
+                    return template;
+                },
+                width: "30",
+                orderable: false,
+                class:"text-center"
+        },
+         {
+            data: null,
+                 render: function (data, type, row) {
+                   
+                    if(data.Status==1){
+                         var template = $('#RowProcessButtonsTemplate2').html();
+                    template = template.replace(new RegExp('{{Id}}', 'g'), row.Id);
+                    }else{
+                          var template = $('#RowProcessButtonsTemplate3').html();
+                    template = template.replace(new RegExp('{{Id}}', 'g'), row.Id);
+                    }
 
+                    return template;
+                },
+                width: "30",
+                orderable: false,
+                class:"text-center"
 
-        AboutMeInsertButton.on("click", function () {
-            AboutMeInsertModal.modal("show");
-        });
+        }
 
-        var columnOptions = [
-            { data: 'Id' },
-            { data: 'About' }
+        ];
+        var orderOptions = [
+            [0, 'desc'] // İlk kolona göre azalan şekilde sırala
         ];
 
-        ListTable = DataTablePrepare("myTable", "/AboutMe/GetAll", columnOptions);
 
-    </script>
+
+    function init() {
+        
+        ListTable = DataTablePrepare("myTable", "/AboutMe/GetAll", columnOptions, null, orderOptions);
+
+        $(document).on("click", "#RecordEditButton", function() {
+            var data = ListTable.api().row(this.parentElement.parentElement.parentElement).data();
+                alert(data.Id);
+            });
+                //toastr.success('Bildirim metni.');
+            AboutMeInsertModal.on('hidden.bs.modal', function () {
+                AboutMeSummerNote.summernote('reset');
+            });
+
+            AboutMeInsertButton.on("click", function () {
+                AboutMeInsertModal.modal("show");
+            });
+
+            AboutMeSummerNoteContentSaveButton.on("click", function () {
+                    if (AboutMeSummerNote.summernote('isEmpty')) {
+                        toastr.error("İçerik Kısmı Boş Geçilemez");
+                        return false;
+
+                    } else {
+                        var requestObject = {};
+                        requestObject.About = $("#aboutMe-content").summernote('code');;
+                        $.ajax({
+                            type: 'POST',
+                            url: '/AboutMe/Insert',
+                            data: JSON.stringify(requestObject),
+                            dataType: 'json',
+                            contentType: 'application/json', // contentType'ın doğru şekilde ayarlanması
+                            encode: true,
+                            success: function (response) {
+                                if (response.Status) {
+                                    toastr.success(response.Messages[0]);
+                                    AboutMeInsertModal.modal('hide');
+                                    ListTable.api().ajax.reload();
+                                } else {
+                                    toastr.error(response.Messages[0]);
+                                    AboutMeInsertModal.modal('hide');
+                                }
+                            },
+                            error: function (xhr, textStatus, errorThrown) {
+                                toastr.error(response.Messages[0]);
+                                AboutMeInsertModal.modal('hide');
+                            }
+                        });
+                    }
+                });
+
+            // Checkbox'un durumunu değişikliklerini dinleyen fonksiyon
+             $(document).on('change', '#mySwitch', function() {
+                
+                var data = ListTable.api().row(this.parentElement.parentElement.parentElement).data();
+                    console.log(data)   ;          
+            });
+
+        @* AboutMeSummerNoteContentSaveButton.on("click", function () {
+            var requestObject = {};
+            requestObject.About = $("#About").val();
+            debugger;
+            $.ajax({
+            type: 'POST',
+            url: '/AboutMe/Insert',
+            data: JSON.stringify(requestObject),
+            dataType: 'json',
+            contentType: 'application/json', // contentType'ın doğru şekilde ayarlanması
+            encode: true,
+            success: function (response) {
+            debugger;
+
+            if (response.Status) {
+            toastr.success(response.Messages[0]);
+            AboutMeInsertModal.modal('hide');
+            ListTable.api().ajax.reload();
+            } else {
+            if (response.KeyValuePairs.length > 0) {
+            for (var i = 0; i < response.KeyValuePairs.length; i++) {
+            var item = response.KeyValuePairs[i];
+            var key = item.Key;
+            var value = item.Value;
+
+            // Hedef input elementini belirleme
+            var inputElement = $('#' + key);
+
+            // Hedef input elementinin altındaki hata mesajı konteynerini ve içeriğini silme
+            inputElement.next('.invalid-feedback').remove();
+
+            // Hedef input elementine hata mesajı class'ını ekleme
+            inputElement.addClass("is-invalid");
+
+            // Dinamik olarak HTML kodu oluşturma ve hata mesajını ekleyin
+            var errorMessageContainer = $('<div>').addClass('fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback text-danger');
+            var errorMessageContent = $('<div>').attr('data-field', key).attr('data-validator', 'notEmpty').text(value);
+
+            // Hedef input elementinin yanına hata mesajını ekleyin
+            inputElement.after(errorMessageContainer.append(errorMessageContent));
+            }
+            } else {
+            toastr.error(response.Messages[0]);
+            AboutMeInsertModal.modal('hide');
+            }
+            }
+            },
+            error: function (xhr, textStatus, errorThrown) {
+            toastr.error(xhr.responseText); // Hata mesajını almak için xhr.responseText kullanın
+            AboutMeInsertModal.modal('hide');
+            }
+            });
+            }); *@
+    }
+    $(document).ready(function() {
+        init();
+    });
+
+ </script>
+
 }
