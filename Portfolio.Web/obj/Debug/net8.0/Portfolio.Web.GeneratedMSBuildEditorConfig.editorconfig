@@ -74,12 +74,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1VzZXJQYXJ0aWFsL1N0cnVjdHVyZS9fU3R5bGVzaGVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Views/Shared/UserPartial/_Aside.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1VzZXJQYXJ0aWFsL19Bc2lkZS5jc2h0bWw=
+[/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Views/Shared/UserPartial/_BackToTop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1VzZXJQYXJ0aWFsL19CYWNrVG9Ub3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Views/Shared/UserPartial/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1VzZXJQYXJ0aWFsL19Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Views/Shared/UserPartial/_Head.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1VzZXJQYXJ0aWFsL19IZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Views/Shared/UserPartial/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1VzZXJQYXJ0aWFsL19IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mustafafatihsahin/Documents/GitHub/Portfolio/Portfolio.Web/Views/Shared/_AdminLayout.cshtml]

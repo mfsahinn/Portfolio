@@ -1,43 +1,83 @@
 ﻿<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en">
 
-<partial name="UserPartial/_Head"></partial>
+    <partial name="UserPartial/_Head"></>
 
 
-<body class="stretched side-header dark">
+@* white- *@
+<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
 
-	@* <button type="button" class="btn btn-dark body-scheme-toggle" data-bodyclass-toggle="dark" data-add-class="btn-warning" data-remove-class="btn-dark" data-add-html="<i class='bi-brightness-high'></i><span class='visually-hidden'>Light Mode</span>" data-remove-html="<i class='bi-moon-stars'></i><span class='visually-hidden'>Dark Mode</span>"><span class="visually-hidden">Dark Toggle</span></button> *@
+       <partial name="UserPartial/_Header"></>
 
-	<!-- Document Wrapper
-	============================================= -->
-	<div id="wrapper">
-        <partial name="UserPartial/_Aside"></>
+    <!-- End Header Area -->
+
+    <!-- Start Popup Mobile Menu  -->
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a class="logo" href="index.html">
+                        <img src="/UserTemplate/assets/images/logo/logos-circle.png" alt="Personal Portfolio">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
+                    </div>
+                </div>
+                <p class="discription">Inbio is a personal portfolio template. You can customize all.</p>
+            </div>
+            <div class="content">
+                <ul class="primary-menu nav nav-pills">
+                    <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#experiences">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#educations">Education</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#footer">Footer</a></li>
+                </ul>
+                <!-- social sharea area -->
+                <div class="social-share-style-1 mt--40">
+                    <span class="title">find with me</span>
+                    <ul class="social-share d-flex liststyle">
+                        <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg></a>
+                        </li>
+                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg></a>
+                        </li>
+                        <li class="linkedin"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <!-- End Popup Mobile Menu  -->
+    <main class="main-page-wrapper">
+            
+            
+        @RenderBody()
         
-		@RenderBody()
+        <!-- End Modal Blog area -->
+            <partial name="UserPartial/_BackToTop"></>
 
-		<!-- Footer
-		============================================= -->
-		<footer id="footer" class="bg-contrast-0 border-width-1">
 
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights" class="bg-color">
-				<div class="container">
-					<p class="mb-0 text-center text-dark text-opacity-75">Copyrights &copy; 2023 All Rights Reserved by Canvas Inc.</p>
-				</div>
-			</div><!-- #copyrights end -->
-		</footer><!-- #footer end -->
+        <partial name="UserPartial/_Footer"></>
 
-	</div><!-- #wrapper end -->
-
-	<!-- Go To Top
-	============================================= -->
-	<div id="gotoTop" class="uil uil-angle-up"></div>
-
-	<!-- JavaScripts
-	============================================= -->
- 	<partial name="UserPartial/Structure/_Scripts"></partial>
-
+        <!-- End Modal Area  -->
+    </main>
+    
+    <partial name="UserPartial/Structure/_Scripts"></>
 
 </body>
+
 </html>
